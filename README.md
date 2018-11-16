@@ -1,13 +1,12 @@
 # WHToast
 
 WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下效果图。
-Github地址：[https://github.com/remember17/WHToast](https://github.com/remember17/WHToast)
 
-![toast.gif](https://upload-images.jianshu.io/upload_images/3873004-f7e702175783d84e.gif?imageMogr2/auto-orient/strip)
+![WHToast.gif](https://upload-images.jianshu.io/upload_images/3873004-57cbafba5f019d2d.gif?imageMogr2/auto-orient/strip)
 
 使用方法也非常简单，下面是使用步骤。
 
-### 1. 可以直接在本页面下载文件拖入工程，也可以使用pod。
+### 1. 可以直接在本页面下载文件拖入WHToast文件到工程，也可以使用pod。
 ```objc
 pod 'WHToast'
 ```
@@ -152,7 +151,7 @@ kToastConfig.messageColor = [UIColor blackColor];
 
 ```
 
-### 9. [WHToast](https://github.com/remember17/WHToast)的Api如下所示。
+### 9. WHToast的Api如下所示。
 
 ```objc
 /**
