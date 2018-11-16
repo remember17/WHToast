@@ -36,7 +36,7 @@ static id _instance;
     _cornerRadius = 7;
     _backColor = [UIColor colorWithWhite:0 alpha:0.8];
     _iconColor = [UIColor whiteColor];
-    _messageColor = [UIColor whiteColor];
+    _textColor = [UIColor whiteColor];
     _fontSize = 15;
 }
 

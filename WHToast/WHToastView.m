@@ -58,7 +58,7 @@ sizeWithFont:font constrainedToSize:maxSize] : CGSizeZero;
     self.layer.cornerRadius = kToastConfig.cornerRadius;
     self.layer.masksToBounds = YES;
     self.messageLabel.text = message;
-    [self.messageLabel setTextColor:kToastConfig.messageColor];
+    [self.messageLabel setTextColor:kToastConfig.textColor];
     self.messageLabel.font = [UIFont systemFontOfSize:kToastConfig.fontSize];
 }
 
@@ -81,7 +81,7 @@ sizeWithFont:font constrainedToSize:maxSize] : CGSizeZero;
     CGSize textSize = kWHToastMultilineTextSize(message, font, CGSizeMake(0.7 * kWHToastScreenWidth, 0.7 * kWHToastScreenHeight));
     CGFloat labelWidth = textSize.width + 1;
     CGFloat labelHeight = textSize.height + 1;
-    CGFloat heightPadding = (type == WHToastTypeWords) ? (2 * kToastConfig.padding) : (3 * kToastConfig.padding);
+    CGFloat heightPadding = (type == WHToastTypeWords) ? (2 * kToastConfig.padding) : (2.5 * kToastConfig.padding);
     CGSize imageSize = (type == WHToastTypeWords) ? CGSizeMake(0, 0) : kToastConfig.tipImageSize;
     CGFloat toastHeight = imageSize.height + heightPadding + labelHeight;
     CGFloat toastWidth = ((labelWidth > imageSize.width) || (type == WHToastTypeWords)) ? labelWidth + (2 * kToastConfig.padding) : imageSize.width + (2 * kToastConfig.padding);
@@ -114,7 +114,7 @@ sizeWithFont:font constrainedToSize:maxSize] : CGSizeZero;
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.tipImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:kToastConfig.tipImageSize.height]];
         NSLog(@"%f",kToastConfig.tipImageSize.height);
         
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.messageLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.tipImageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:kToastConfig.padding]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.messageLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.tipImageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:kToastConfig.padding / 2]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.messageLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:kToastConfig.padding]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.messageLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-kToastConfig.padding]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.messageLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:-kToastConfig.padding]];

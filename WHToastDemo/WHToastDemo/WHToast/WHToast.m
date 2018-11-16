@@ -8,6 +8,7 @@
 
 #import "WHToast.h"
 #import "WHToastView.h"
+#import "WHToastConfig.h"
 
 @interface WHToast()
 @property (nonatomic, strong) UIView *maskView;
@@ -26,6 +27,8 @@ static id _instance;
     });
     return _instance;
 }
+
+#pragma mark - show toast
 
 + (void)showSuccessWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
     [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
@@ -59,6 +62,58 @@ static id _instance;
     [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:originY image:image dismissDelay:delay finishHandler:handler];
 }
 
++ (void)hide {
+    [[self sharedInstance] removeToast];
+}
+
+#pragma mark - configuration
+
++ (void)setShowMask:(BOOL)showMask {
+    kToastConfig.showMask = showMask;
+}
+
++ (void)setMaskColor:(UIColor *)maskColor {
+    kToastConfig.maskColor = maskColor;
+}
+
++ (void)setMaskCoverNav:(BOOL)maskCoverNav {
+    kToastConfig.maskCoverNav = maskCoverNav;
+}
+
++ (void)setPadding:(CGFloat)padding {
+    kToastConfig.padding = padding;
+}
+
++ (void)setTipImageSize:(CGSize)tipImageSize {
+    kToastConfig.tipImageSize = tipImageSize;
+}
+
++ (void)setCornerRadius:(CGFloat)cornerRadius {
+    kToastConfig.cornerRadius = cornerRadius;
+}
+
++ (void)setBackColor:(UIColor *)backColor {
+    kToastConfig.backColor = backColor;
+}
+
++ (void)setIconColor:(UIColor *)iconColor {
+    kToastConfig.iconColor = iconColor;
+}
+
++ (void)setTextColor:(UIColor *)textColor {
+    kToastConfig.textColor = textColor;
+}
+
++ (void)setFontSize:(CGFloat)fontSize {
+    kToastConfig.fontSize = fontSize;
+}
+
++ (void)resetConfig {
+    [kToastConfig resetConfig];
+}
+
+#pragma mark - private
+
 - (void)showToastWithType:(WHToastType)type Message:(NSString *)message originY:(CGFloat)originY image:(UIImage *)image dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
     [self guard];
     self.finishHandler = handler;
@@ -79,16 +134,6 @@ static id _instance;
     }];
     [self dismissDelay:delay];
 }
-
-+ (void)hide {
-    [[self sharedInstance] removeToast];
-}
-
-+ (void)resetConfig {
-    [kToastConfig resetConfig];
-}
-
-#pragma mark - private
 
 - (void)guard {
     if (self.toastView.superview != nil || self.toastView) {
