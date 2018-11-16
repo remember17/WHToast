@@ -11,7 +11,7 @@ WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下�
 > 如果pod找不到WHToast，先执行 pod setup
 
 ```objc
-pod 'WHToast'
+pod 'WHToast','~>0.0.1'
 
 // 如果pod找不到WHToast，先执行 pod setup
 pod setup
