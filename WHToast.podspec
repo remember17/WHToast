@@ -4,7 +4,7 @@
 
     s.name        = "WHToast"
 
-    s.version      = "0.0.0.1"
+    s.version      = "0.0.0.2"
 
     s.summary      = "iOS Toast"
 
@@ -18,9 +18,11 @@
 
     s.source      = { :git => "https://github.com/remember17/WHToast.git", :tag => s.version }
 
-    s.source_files  = "WHToast", "WHAddVC/*.{h,m}"
+    s.source_files  = "WHToast", "WHToast/*.{h,m}"
 
     s.framework  = "UIKit"
+
+    s.resource   = 'WHToast/wtoast_icon/**'
 
     s.requires_arc = true
 
