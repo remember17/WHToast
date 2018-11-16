@@ -4,7 +4,7 @@
 //
 //  Created by wuhao on 2018/11/15.
 //  Copyright © 2018 wuhao. All rights reserved.
-//
+//  https://github.com/remember17/WHToast
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_7_0
 #define kWHToastMultilineTextSize(text, font, maxSize) [text length] > 0 ? [text \
