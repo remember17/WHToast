@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68FDD0F1219EC0620058D292 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F0219EC0620058D292 /* AppDelegate.m */; };
+		68FDD0F4219EC0620058D292 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F3219EC0620058D292 /* ViewController.m */; };
+		68FDD0F7219EC0620058D292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0F5219EC0620058D292 /* Main.storyboard */; };
+		68FDD0F9219EC0640058D292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0F8219EC0640058D292 /* Assets.xcassets */; };
+		68FDD0FC219EC0640058D292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0FA219EC0640058D292 /* LaunchScreen.storyboard */; };
+		68FDD0FF219EC0640058D292 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0FE219EC0640058D292 /* main.m */; };
+		68FDD113219EC0770058D292 /* whtoast_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD107219EC0770058D292 /* whtoast_success.png */; };
+		68FDD114219EC0770058D292 /* whtoast_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD108219EC0770058D292 /* whtoast_success@2x.png */; };
+		68FDD115219EC0770058D292 /* whtoast_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD109219EC0770058D292 /* whtoast_success@3x.png */; };
+		68FDD116219EC0770058D292 /* whtoast_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10A219EC0770058D292 /* whtoast_error.png */; };
+		68FDD117219EC0770058D292 /* whtoast_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10B219EC0770058D292 /* whtoast_error@2x.png */; };
+		68FDD118219EC0770058D292 /* whtoast_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10C219EC0770058D292 /* whtoast_error@3x.png */; };
+		68FDD119219EC0770058D292 /* WHToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD110219EC0770058D292 /* WHToastConfig.m */; };
+		68FDD11A219EC0770058D292 /* WHToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD111219EC0770058D292 /* WHToastView.m */; };
+		68FDD11B219EC0770058D292 /* WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD112219EC0770058D292 /* WHToast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68FDD0EC219EC0620058D292 /* WHToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FDD0EF219EC0620058D292 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68FDD0F0219EC0620058D292 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68FDD0F2219EC0620058D292 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68FDD0F3219EC0620058D292 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68FDD0F6219EC0620058D292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68FDD0F8219EC0640058D292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68FDD0FB219EC0640058D292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68FDD0FD219EC0640058D292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68FDD0FE219EC0640058D292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68FDD107219EC0770058D292 /* whtoast_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_success.png; sourceTree = "<group>"; };
+		68FDD108219EC0770058D292 /* whtoast_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@2x.png"; sourceTree = "<group>"; };
+		68FDD109219EC0770058D292 /* whtoast_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@3x.png"; sourceTree = "<group>"; };
+		68FDD10A219EC0770058D292 /* whtoast_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_error.png; sourceTree = "<group>"; };
+		68FDD10B219EC0770058D292 /* whtoast_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@2x.png"; sourceTree = "<group>"; };
+		68FDD10C219EC0770058D292 /* whtoast_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@3x.png"; sourceTree = "<group>"; };
+		68FDD10D219EC0770058D292 /* WHToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastView.h; sourceTree = "<group>"; };
+		68FDD10E219EC0770058D292 /* WHToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastConfig.h; sourceTree = "<group>"; };
+		68FDD10F219EC0770058D292 /* WHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToast.h; sourceTree = "<group>"; };
+		68FDD110219EC0770058D292 /* WHToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastConfig.m; sourceTree = "<group>"; };
+		68FDD111219EC0770058D292 /* WHToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastView.m; sourceTree = "<group>"; };
+		68FDD112219EC0770058D292 /* WHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToast.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68FDD0E9219EC0620058D292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68FDD0E3219EC0620058D292 = {
+			isa = PBXGroup;
+			children = (
+				68FDD0EE219EC0620058D292 /* WHToastDemo */,
+				68FDD0ED219EC0620058D292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68FDD0ED219EC0620058D292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68FDD0EC219EC0620058D292 /* WHToastDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68FDD0EE219EC0620058D292 /* WHToastDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68FDD105219EC0770058D292 /* WHToast */,
+				68FDD0EF219EC0620058D292 /* AppDelegate.h */,
+				68FDD0F0219EC0620058D292 /* AppDelegate.m */,
+				68FDD0F2219EC0620058D292 /* ViewController.h */,
+				68FDD0F3219EC0620058D292 /* ViewController.m */,
+				68FDD0F5219EC0620058D292 /* Main.storyboard */,
+				68FDD0F8219EC0640058D292 /* Assets.xcassets */,
+				68FDD0FA219EC0640058D292 /* LaunchScreen.storyboard */,
+				68FDD0FD219EC0640058D292 /* Info.plist */,
+				68FDD0FE219EC0640058D292 /* main.m */,
+			);
+			path = WHToastDemo;
+			sourceTree = "<group>";
+		};
+		68FDD105219EC0770058D292 /* WHToast */ = {
+			isa = PBXGroup;
+			children = (
+				68FDD10F219EC0770058D292 /* WHToast.h */,
+				68FDD112219EC0770058D292 /* WHToast.m */,
+				68FDD10E219EC0770058D292 /* WHToastConfig.h */,
+				68FDD110219EC0770058D292 /* WHToastConfig.m */,
+				68FDD10D219EC0770058D292 /* WHToastView.h */,
+				68FDD111219EC0770058D292 /* WHToastView.m */,
+				68FDD106219EC0770058D292 /* wtoast_icon */,
+			);
+			path = WHToast;
+			sourceTree = "<group>";
+		};
+		68FDD106219EC0770058D292 /* wtoast_icon */ = {
+			isa = PBXGroup;
+			children = (
+				68FDD107219EC0770058D292 /* whtoast_success.png */,
+				68FDD108219EC0770058D292 /* whtoast_success@2x.png */,
+				68FDD109219EC0770058D292 /* whtoast_success@3x.png */,
+				68FDD10A219EC0770058D292 /* whtoast_error.png */,
+				68FDD10B219EC0770058D292 /* whtoast_error@2x.png */,
+				68FDD10C219EC0770058D292 /* whtoast_error@3x.png */,
+			);
+			path = wtoast_icon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68FDD0EB219EC0620058D292 /* WHToastDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68FDD102219EC0640058D292 /* Build configuration list for PBXNativeTarget "WHToastDemo" */;
+			buildPhases = (
+				68FDD0E8219EC0620058D292 /* Sources */,
+				68FDD0E9219EC0620058D292 /* Frameworks */,
+				68FDD0EA219EC0620058D292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHToastDemo;
+			productName = WHToastDemo;
+			productReference = 68FDD0EC219EC0620058D292 /* WHToastDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68FDD0E4219EC0620058D292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wuhao;
+				TargetAttributes = {
+					68FDD0EB219EC0620058D292 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 68FDD0E7219EC0620058D292 /* Build configuration list for PBXProject "WHToastDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68FDD0E3219EC0620058D292;
+			productRefGroup = 68FDD0ED219EC0620058D292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68FDD0EB219EC0620058D292 /* WHToastDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68FDD0EA219EC0620058D292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FDD113219EC0770058D292 /* whtoast_success.png in Resources */,
+				68FDD118219EC0770058D292 /* whtoast_error@3x.png in Resources */,
+				68FDD0FC219EC0640058D292 /* LaunchScreen.storyboard in Resources */,
+				68FDD115219EC0770058D292 /* whtoast_success@3x.png in Resources */,
+				68FDD116219EC0770058D292 /* whtoast_error.png in Resources */,
+				68FDD117219EC0770058D292 /* whtoast_error@2x.png in Resources */,
+				68FDD114219EC0770058D292 /* whtoast_success@2x.png in Resources */,
+				68FDD0F9219EC0640058D292 /* Assets.xcassets in Resources */,
+				68FDD0F7219EC0620058D292 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68FDD0E8219EC0620058D292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FDD0F4219EC0620058D292 /* ViewController.m in Sources */,
+				68FDD11A219EC0770058D292 /* WHToastView.m in Sources */,
+				68FDD0FF219EC0640058D292 /* main.m in Sources */,
+				68FDD119219EC0770058D292 /* WHToastConfig.m in Sources */,
+				68FDD11B219EC0770058D292 /* WHToast.m in Sources */,
+				68FDD0F1219EC0620058D292 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68FDD0F5219EC0620058D292 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68FDD0F6219EC0620058D292 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68FDD0FA219EC0640058D292 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68FDD0FB219EC0640058D292 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68FDD100219EC0640058D292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68FDD101219EC0640058D292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68FDD103219EC0640058D292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WHToastDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuhao.WHToastDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68FDD104219EC0640058D292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WHToastDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuhao.WHToastDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68FDD0E7219EC0620058D292 /* Build configuration list for PBXProject "WHToastDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68FDD100219EC0640058D292 /* Debug */,
+				68FDD101219EC0640058D292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68FDD102219EC0640058D292 /* Build configuration list for PBXNativeTarget "WHToastDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68FDD103219EC0640058D292 /* Debug */,
+				68FDD104219EC0640058D292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68FDD0E4219EC0620058D292 /* Project object */;
+}

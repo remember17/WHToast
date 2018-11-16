@@ -1,0 +1,117 @@
+//
+//  WHToast.m
+//  WHToast
+//
+//  Created by wuhao on 2018/11/15.
+//  Copyright © 2018 wuhao. All rights reserved.
+//
+
+#import "WHToast.h"
+#import "WHToastView.h"
+
+@interface WHToast()
+@property (nonatomic, strong) UIView *maskView;
+@property (nonatomic, strong) WHToastView *toastView;
+@property (nonatomic, strong) NSTimer *toastTimer;
+@property (nonatomic, copy) dispatch_block_t finishHandler;
+@end
+
+@implementation WHToast
+
+static id _instance;
++(instancetype)sharedInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [[self alloc] init];
+    });
+    return _instance;
+}
+
++ (void)showSuccessWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
+}
+
++(void)showErrorWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showImage:(UIImage *)image message:(NSString *)message  dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:0 image:image dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
+}
+
++ (void)showImage:(UIImage *)image message:(NSString *)message  originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:originY image:image dismissDelay:delay finishHandler:handler];
+}
+
+- (void)showToastWithType:(WHToastType)type Message:(NSString *)message originY:(CGFloat)originY image:(UIImage *)image dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+    [self guard];
+    self.finishHandler = handler;
+    self.toastView = [WHToastView toastWithMessage:message type:type originY:originY tipImage:image];
+    self.toastView.alpha = 0;
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    if (kToastConfig.showMask) {
+        self.maskView = [WHToastView maskViewWithColor:kToastConfig.maskColor coverNav:kToastConfig.maskCoverNav];
+        self.maskView.alpha = 0;
+        [keyWindow addSubview:self.maskView];
+        [keyWindow addSubview:self.toastView];
+    } else {
+        [keyWindow addSubview:self.toastView];
+    }
+    [UIView animateWithDuration:0.2 animations:^{
+        self.maskView.alpha = 1;
+        self.toastView.alpha = 1;
+    }];
+    [self dismissDelay:delay];
+}
+
++ (void)hide {
+    [[self sharedInstance] removeToast];
+}
+
++ (void)resetConfig {
+    [kToastConfig resetConfig];
+}
+
+#pragma mark - private
+
+- (void)guard {
+    if (self.toastView.superview != nil || self.toastView) {
+        [self removeToast];
+    }
+}
+
+- (void)dismissDelay:(NSTimeInterval)delay {
+    self.toastTimer = [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(finishDismiss) userInfo:nil repeats:NO];
+}
+
+- (void)finishDismiss {
+    [self removeToast];
+    if (self.finishHandler) { self.finishHandler(); }
+}
+
+- (void)removeToast {
+    [self.toastTimer invalidate];
+    self.toastTimer = nil;
+    [self.toastView removeFromSuperview];
+    [self.maskView removeFromSuperview];
+    self.toastView = nil;
+    self.maskView = nil;
+}
+
+@end
