@@ -17,7 +17,7 @@ pod 'WHToast','~>0.0.1'
 pod setup
 ```
 
-### 2. 导图WHToast.h头文件
+### 2. 导入WHToast.h头文件
 
 ```objc
 // pod
