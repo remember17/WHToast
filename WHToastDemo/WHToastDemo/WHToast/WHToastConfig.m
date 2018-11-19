@@ -32,7 +32,7 @@ static id _instance;
     _maskColor = [UIColor clearColor];
     _maskCoverNav = YES;
     _padding = 12;
-    _tipImageSize = CGSizeMake(30, 30);
+    _tipImageSize = CGSizeMake(25, 25);
     _cornerRadius = 7;
     _backColor = [UIColor colorWithWhite:0 alpha:0.8];
     _iconColor = [UIColor whiteColor];

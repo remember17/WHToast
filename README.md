@@ -11,7 +11,7 @@ WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下�
 > 如果pod找不到WHToast，先执行 pod setup
 
 ```objc
-pod 'WHToast','~>0.0.1'
+pod 'WHToast','~>0.0.2'
 
 // 如果pod找不到WHToast，先执行 pod setup
 pod setup
@@ -33,13 +33,13 @@ pod setup
 ### 4. 显示文字提示。
 
 ```objc
-// 显示在页面中间，dismissDelay代表多久之后消失
-[WHToast showMessage:@"测试一下" dismissDelay:2 finishHandler:^{
+// 显示在页面中间，duration代表多久之后消失
+[WHToast showMessage:@"测试一下" duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 
 // 自定义frame.origin.y
-[WHToast showMessage:@"测试一下" originY:200 dismissDelay:2 finishHandler:^{
+[WHToast showMessage:@"测试一下" originY:200 duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 ```
@@ -47,13 +47,13 @@ pod setup
 ### 5. 显示带有成功图标的提示。
 
 ```objc
-// 显示在页面中间，dismissDelay代表多久之后消失
-[WHToast showSuccessWithMessage:@"测试一下" dismissDelay:2 finishHandler:^{
+// 显示在页面中间，duration代表多久之后消失
+[WHToast showSuccessWithMessage:@"测试一下" duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 
 // 自定义frame.origin.y
-[WHToast showSuccessWithMessage:@"测试一下" originY:100 dismissDelay:2 finishHandler:^{
+[WHToast showSuccessWithMessage:@"测试一下" originY:100 duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 ```
@@ -61,13 +61,14 @@ pod setup
 ### 6. 带有错误图标的提示。
 
 ```objc
-// 显示在页面中间，dismissDelay代表多久之后消失
-[WHToast showErrorWithMessage:@"测试一下" dismissDelay:2 finishHandler:^{
+// 显示在页面中间，duration代表多久之后消失
+[WHToast showErrorWithMessage:@"测试一下" duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 
 // 自定义frame.origin.y
-[WHToast showErrorWithMessage:@"测试一下" originY:200 dismissDelay:2 finishHandler:^{
+[WHToast showErrorWithMessage:@"测试一下" originY:200 duration
+:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 ```
@@ -75,20 +76,20 @@ pod setup
 ### 7. 传入一个图片，自定义图标提示。
 
 ```objc
-// 显示自定义图片，如果message传入nil，则只显示图片，dismissDelay代表多久之后消失
-[WHToast showImage:[UIImage imageNamed:@"123"] message:nil dismissDelay:2 finishHandler:^{
+// 显示自定义图片，如果message传入nil，则只显示图片，duration代表多久之后消失
+[WHToast showImage:[UIImage imageNamed:@"123"] message:nil duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 
 // 自定义frame.origin.y，显示自定义图片
-[WHToast showImage:[UIImage imageNamed:@"123"] message:@"测试一下" originY:200 dismissDelay:2 finishHandler:^{
+[WHToast showImage:[UIImage imageNamed:@"123"] message:@"测试一下" originY:200 duration:2 finishHandler:^{
   NSLog(@"省略n行代码");
 }];
 ```
 
 ### 8. 全局自定义显示样式。
 
->直接使用WHToast的类方法就可以做全局自定义设置。样式如下。
+> 直接使用WHToast的类方法就可以做全局自定义设置。样式如下。
 
 ```objc 
 
@@ -104,7 +105,7 @@ pod setup
 /** 边距，默认12 */
 + (void)setPadding:(CGFloat)padding;
 
-/** 提示图片尺寸，默认（30,30）*/
+/** 提示图片尺寸，默认（25,25）*/
 + (void)setTipImageSize:(CGSize)tipImageSize;
 
 /** 圆角，默认7 */
@@ -139,32 +140,33 @@ pod setup
 
 ```
 
-### 9. 下面贴出来所有方法。
+### 9. 下面贴出来[WHToast](https://github.com/remember17/WHToast)的所有方法。
 
 ```objc
+
 /** 仅文字，展示在屏幕中间 */
-+ (void)showMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 仅文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 成功图标和文字，展示在屏幕中间 */
-+ (void)showSuccessWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showSuccessWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 成功图标和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 失败图标和文字，展示在屏幕中间 */
-+ (void)showErrorWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showErrorWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 失败图标和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 自定义图片和文字，展示在屏幕中间。 如果message传入nil，则只显示图片 */
-+ (void)showImage:(UIImage *)image message:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showImage:(UIImage *)image message:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 自定义图片和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间。如果message传入nil，则只显示图片 */
-+ (void)showImage:(UIImage *)image message:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showImage:(UIImage *)image message:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 主动消失 */
 + (void)hide;
@@ -186,7 +188,7 @@ pod setup
 /** 边距，默认12 */
 + (void)setPadding:(CGFloat)padding;
 
-/** 提示图片尺寸，默认（30,30）*/
+/** 提示图片尺寸，默认（25,25）*/
 + (void)setTipImageSize:(CGSize)tipImageSize;
 
 /** 圆角，默认7 */

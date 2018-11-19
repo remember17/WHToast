@@ -13,28 +13,28 @@
 + (instancetype)new NS_UNAVAILABLE;
 
 /** 仅文字，展示在屏幕中间 */
-+ (void)showMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 仅文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 成功图标和文字，展示在屏幕中间 */
-+ (void)showSuccessWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showSuccessWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 成功图标和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 失败图标和文字，展示在屏幕中间 */
-+ (void)showErrorWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showErrorWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 失败图标和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间 */
-+ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 自定义图片和文字，展示在屏幕中间。 如果message传入nil，则只显示图片 */
-+ (void)showImage:(UIImage *)image message:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showImage:(UIImage *)image message:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 自定义图片和文字，自定义frame.origin.y 如果（originY <= 0）会展示在屏幕中间。如果message传入nil，则只显示图片 */
-+ (void)showImage:(UIImage *)image message:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler;
++ (void)showImage:(UIImage *)image message:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
 
 /** 主动消失 */
 + (void)hide;
@@ -56,7 +56,7 @@
 /** 边距，默认12 */
 + (void)setPadding:(CGFloat)padding;
 
-/** 提示图片尺寸，默认（30,30）*/
+/** 提示图片尺寸，默认（25,25）*/
 + (void)setTipImageSize:(CGSize)tipImageSize;
 
 /** 圆角，默认7 */

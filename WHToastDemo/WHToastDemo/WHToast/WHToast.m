@@ -30,36 +30,36 @@ static id _instance;
 
 #pragma mark - show toast
 
-+ (void)showSuccessWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
++ (void)showSuccessWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:0 image:nil duration:duration finishHandler:handler];
 }
 
-+ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
++ (void)showSuccessWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeSuccess Message:message originY:originY image:nil duration:duration finishHandler:handler];
 }
 
-+(void)showErrorWithMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
++(void)showErrorWithMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:0 image:nil duration:duration finishHandler:handler];
 }
 
-+ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
++ (void)showErrorWithMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeError Message:message originY:originY image:nil duration:duration finishHandler:handler];
 }
 
-+ (void)showMessage:(NSString *)message originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:originY image:nil dismissDelay:delay finishHandler:handler];
++ (void)showMessage:(NSString *)message originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:originY image:nil duration:duration finishHandler:handler];
 }
 
-+ (void)showImage:(UIImage *)image message:(NSString *)message  dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:0 image:image dismissDelay:delay finishHandler:handler];
++ (void)showImage:(UIImage *)image message:(NSString *)message  duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:0 image:image duration:duration finishHandler:handler];
 }
 
-+ (void)showMessage:(NSString *)message dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:0 image:nil dismissDelay:delay finishHandler:handler];
++ (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeWords Message:message originY:0 image:nil duration:duration finishHandler:handler];
 }
 
-+ (void)showImage:(UIImage *)image message:(NSString *)message  originY:(CGFloat)originY dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
-    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:originY image:image dismissDelay:delay finishHandler:handler];
++ (void)showImage:(UIImage *)image message:(NSString *)message  originY:(CGFloat)originY duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
+    [[self sharedInstance] showToastWithType:WHToastTypeImage Message:message originY:originY image:image duration:duration finishHandler:handler];
 }
 
 + (void)hide {
@@ -114,7 +114,7 @@ static id _instance;
 
 #pragma mark - private
 
-- (void)showToastWithType:(WHToastType)type Message:(NSString *)message originY:(CGFloat)originY image:(UIImage *)image dismissDelay:(NSTimeInterval)delay finishHandler:(dispatch_block_t)handler {
+- (void)showToastWithType:(WHToastType)type Message:(NSString *)message originY:(CGFloat)originY image:(UIImage *)image duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler {
     [self guard];
     self.finishHandler = handler;
     self.toastView = [WHToastView toastWithMessage:message type:type originY:originY tipImage:image];
@@ -132,7 +132,7 @@ static id _instance;
         self.maskView.alpha = 1;
         self.toastView.alpha = 1;
     }];
-    [self dismissDelay:delay];
+    [self duration:duration];
 }
 
 - (void)guard {
@@ -141,8 +141,8 @@ static id _instance;
     }
 }
 
-- (void)dismissDelay:(NSTimeInterval)delay {
-    self.toastTimer = [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(finishDismiss) userInfo:nil repeats:NO];
+- (void)duration:(NSTimeInterval)duration {
+    self.toastTimer = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(finishDismiss) userInfo:nil repeats:NO];
 }
 
 - (void)finishDismiss {
