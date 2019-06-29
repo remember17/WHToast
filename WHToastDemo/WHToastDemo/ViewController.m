@@ -11,59 +11,105 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self showDemo];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self showDemo];
-}
-
-- (void)showDemo {
-    
-    [WHToast showSuccessWithMessage:@"成功icon提示" duration:1 finishHandler:^{
-        [WHToast showSuccessWithMessage:@"成功icon文字，自定义y轴位置" originY:100 duration:1 finishHandler:^{
-            [WHToast showErrorWithMessage:@"失败icon提示" duration:1 finishHandler:^{
-                [WHToast showErrorWithMessage:@"失败icon文字，自定义y轴位置" originY:200 duration:1 finishHandler:^{
-                    [WHToast showMessage:@"仅仅文字提示" duration:1 finishHandler:^{
-                        [WHToast showMessage:@"仅仅文字提示，自定义y轴位置" originY:500 duration:1 finishHandler:^{
-                            [WHToast setTipImageSize:CGSizeMake(120, 60)]; // 定义图片大小
-                            [WHToast setBackColor:[UIColor clearColor]]; // 透明背景
-                            [WHToast setPadding:0]; // 0边距
-                            // 自定义图片，message传入nil ==> 只显示图片
-                            [WHToast showImage:[UIImage imageNamed:@"123"] message:nil duration:1 finishHandler:^{
-                                // 自定义图片和y轴位置，message传入nil ==> 只显示图片
-                                [WHToast setTipImageSize:CGSizeMake(120, 120)];
-                                [WHToast showImage:[UIImage imageNamed:@"789"] message:nil originY:100 duration:1 finishHandler:^{
-                                    [WHToast resetConfig]; // 恢复默认配置
-                                    [WHToast setTipImageSize:CGSizeMake(100, 50)];
-                                    [WHToast setFontSize:30]; // 定义字体大小
-                                    [WHToast showImage:[UIImage imageNamed:@"123"] message:@"测试图片，自定义y轴位置" originY:500 duration:1 finishHandler:^{
-                                        //👇全局自定义显示样式，有默认值
-                                        [WHToast setShowMask:YES];
-                                        [WHToast setMaskColor:[UIColor colorWithWhite:0 alpha:0.6]];
-                                        [WHToast setMaskCoverNav:YES];
-                                        [WHToast setTipImageSize:CGSizeMake(50, 50)];
-                                        [WHToast setFontSize:30];
-                                        [WHToast setPadding:20];
-                                        [WHToast setCornerRadius:20];
-                                        [WHToast setIconColor:[UIColor blackColor]];
-                                        [WHToast setBackColor:[UIColor whiteColor]];
-                                        [WHToast setTextColor:[UIColor blackColor]];
-                                        [WHToast showSuccessWithMessage:@"自定义显示样式" originY:500 duration:1 finishHandler:^{
-                                            [WHToast resetConfig];
-                                        }];
-                                    }];
-                                }];
-                            }];
-                        }];
-                    }];
-                }];
+- (IBAction)action:(UIButton *)button {
+    CGFloat customY = self.view.bounds.size.height - 200;
+    switch (button.tag) {
+        case 0:
+            [WHToast showSuccessWithMessage:@"成功的提示信息" duration:2 finishHandler:^{
+                NSLog(@"成功信息显示完成");
             }];
-        }];
-    }];
-    
+            break;
+        case 1:
+            [WHToast showSuccessWithMessage:@"成功的提示信息" originY:customY duration:2 finishHandler:^{
+                NSLog(@"y成功信息显示完成");
+            }];
+            break;
+        case 2:
+            [WHToast showErrorWithMessage:@"错误的信息提示" duration:2 finishHandler:^{
+                NSLog(@"错误的信息提示完成");
+            }];
+            break;
+        case 3:
+            [WHToast showErrorWithMessage:@"错误的提示信息" originY:customY duration:2 finishHandler:^{
+                NSLog(@"y错误的信息提示完成");
+            }];
+            break;
+        case 4:
+            [WHToast showMessage:@"仅提示文字" duration:2 finishHandler:^{
+                NSLog(@"仅提示文字完成");
+            }];
+            break;
+        case 5:
+            [WHToast showMessage:@"仅提示文字" originY:customY duration:2 finishHandler:^{
+                NSLog(@"y仅提示文字完成");
+            }];
+            break;
+        case 6:
+            // message传nil仅显示图片
+            [WHToast setTipImageSize:CGSizeMake(120, 60)];
+            [WHToast showImage:[UIImage imageNamed:@"123"] message:nil duration:2 finishHandler:^{
+                [WHToast resetConfig];
+                NSLog(@"仅显示图片完成");
+            }];
+            break;
+        case 7:
+            // message传nil仅显示图片，自定义y
+            [WHToast setTipImageSize:CGSizeMake(120, 120)];
+            [WHToast showImage:[UIImage imageNamed:@"789"] message:nil duration:2 finishHandler:^{
+                [WHToast resetConfig];
+                NSLog(@"y仅显示图片完成");
+            }];
+            break;
+        case 8:
+            //👇全局自定义显示样式，有默认值
+            [WHToast setShowMask:YES];
+            [WHToast setMaskColor:[UIColor colorWithWhite:0 alpha:0.3]];
+            [WHToast setMaskCoverNav:YES];
+            [WHToast setPadding:20];
+            [WHToast setTipImageSize:CGSizeMake(50, 50)];
+            [WHToast setCornerRadius:10];
+            [WHToast setImageCornerRadius:25];
+            [WHToast setBackColor:[self whToast_colorFromHexString:@"#00A0FF" alpha:0.2]];
+            [WHToast setIconColor:[UIColor whiteColor]];
+            [WHToast setTextColor:[UIColor whiteColor]];
+            [WHToast setFontSize:18];
+            [WHToast showImage:[UIImage imageNamed:@"789"] message:@"自定义显示样式" duration:2 finishHandler:^{
+                NSLog(@"自定义显示样式完成");
+                [WHToast resetConfig];
+            }];
+            break;
+        default:
+            break;
+    }
+}
+
+- (UIColor *)whToast_colorFromHexString:(NSString *)hexString alpha:(CGFloat)alpha {
+    NSString *cString = [[hexString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    if ([cString length] < 6) {
+        return [UIColor clearColor];
+    }
+    if ([cString hasPrefix:@"0X"]) {
+        cString = [cString substringFromIndex:2];
+    }
+    if ([cString hasPrefix:@"#"]) {
+        cString = [cString substringFromIndex:1];
+    }
+    if ([cString length] != 6) {
+        return [UIColor clearColor];
+    }
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    NSString *rString = [cString substringWithRange:range];
+    range.location = 2;
+    NSString *gString = [cString substringWithRange:range];
+    range.location = 4;
+    NSString *bString = [cString substringWithRange:range];
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
 }
 
 @end

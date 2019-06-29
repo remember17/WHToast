@@ -2,7 +2,7 @@
 
 WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下效果图。
 
-![whtoast.gif](https://upload-images.jianshu.io/upload_images/3873004-50507445e23bb9f2.gif?imageMogr2/auto-orient/strip)
+![whtoast.gif](https://upload-images.jianshu.io/upload_images/3873004-1f63d7bbdb9a331c.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/265)
 
 使用方法也非常简单，下面是使用步骤。
 
@@ -11,7 +11,7 @@ WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下�
 > 如果pod找不到WHToast，先执行 pod setup
 
 ```objc
-pod 'WHToast','~>0.0.2'
+pod 'WHToast','~>0.0.3'
 
 // 如果pod找不到WHToast，先执行 pod setup
 pod setup
@@ -87,60 +87,7 @@ pod setup
 }];
 ```
 
-### 8. 全局自定义显示样式。
-
-> 直接使用WHToast的类方法就可以做全局自定义设置。样式如下。
-
-```objc 
-
-/** 是否有背景遮罩，默认有 */
-+ (void)setShowMask:(BOOL)showMask;
-
-/** 遮罩颜色，默认透明 */
-+ (void)setMaskColor:(UIColor *)maskColor;
-
-/** 遮罩是否遮住导航栏，默认遮住 */
-+ (void)setMaskCoverNav:(BOOL)maskCoverNav;
-
-/** 边距，默认12 */
-+ (void)setPadding:(CGFloat)padding;
-
-/** 提示图片尺寸，默认（25,25）*/
-+ (void)setTipImageSize:(CGSize)tipImageSize;
-
-/** 圆角，默认7 */
-+ (void)setCornerRadius:(CGFloat)cornerRadius;
-
-/** 背景颜色，默认[UIColor colorWithWhite:0 alpha:0.8] */
-+ (void)setBackColor:(UIColor *)backColor;
-
-/** 成功/失败 图标颜色，默认白色 */
-+ (void)setIconColor:(UIColor *)iconColor;
-
-/** 文字颜色，默认白色 */
-+ (void)setTextColor:(UIColor *)textColor;
-
-/** 文字大小，默认15 */
-+ (void)setFontSize:(CGFloat)fontSize;
-
-/** 恢复默认配置 */
-+ (void)resetConfig;
-
-// 调用方式
-[WHToast setShowMask:NO];
-[WHToast setMaskColor:[UIColor colorWithWhite:0 alpha:0.6]];
-[WHToast setMaskCoverNav:NO];
-[WHToast setTipImageSize:CGSizeMake(50, 50)];
-[WHToast setFontSize:30];
-[WHToast setPadding:20];
-[WHToast setCornerRadius:20];
-[WHToast setIconColor:[UIColor blackColor]];
-[WHToast setBackColor:[UIColor whiteColor]];
-[WHToast setTextColor:[UIColor blackColor]];
-
-```
-
-### 9. 下面贴出来[WHToast](https://github.com/remember17/WHToast)的所有方法。
+### 8. 下面贴出来[WHToast](https://github.com/remember17/WHToast)的所有方法。
 
 ```objc
 
@@ -188,11 +135,14 @@ pod setup
 /** 边距，默认12 */
 + (void)setPadding:(CGFloat)padding;
 
-/** 提示图片尺寸，默认（25,25）*/
+/** 提示图片尺寸，默认（20,20）*/
 + (void)setTipImageSize:(CGSize)tipImageSize;
 
-/** 圆角，默认7 */
+/** toast圆角，默认7 */
 + (void)setCornerRadius:(CGFloat)cornerRadius;
+
+/** 提示图片圆角，默认0 */
++ (void)setImageCornerRadius:(CGFloat)cornerRadius;
 
 /** 背景颜色，默认[UIColor colorWithWhite:0 alpha:0.8] */
 + (void)setBackColor:(UIColor *)backColor;

@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WHToast : NSObject
-- (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)new NS_UNAVAILABLE;
 
 /** 仅文字，展示在屏幕中间 */
 + (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration finishHandler:(dispatch_block_t)handler;
@@ -56,11 +54,14 @@
 /** 边距，默认12 */
 + (void)setPadding:(CGFloat)padding;
 
-/** 提示图片尺寸，默认（25,25）*/
+/** 提示图片尺寸，默认（20,20）*/
 + (void)setTipImageSize:(CGSize)tipImageSize;
 
-/** 圆角，默认7 */
+/** toast圆角，默认7 */
 + (void)setCornerRadius:(CGFloat)cornerRadius;
+
+/** 提示图片圆角，默认0 */
++ (void)setImageCornerRadius:(CGFloat)cornerRadius;
 
 /** 背景颜色，默认[UIColor colorWithWhite:0 alpha:0.8] */
 + (void)setBackColor:(UIColor *)backColor;
@@ -77,5 +78,7 @@
 /** 恢复默认配置 */
 + (void)resetConfig;
 
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
 @end
 

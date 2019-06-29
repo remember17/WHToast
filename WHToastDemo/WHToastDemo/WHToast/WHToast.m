@@ -92,6 +92,10 @@ static id _instance;
     kToastConfig.cornerRadius = cornerRadius;
 }
 
++ (void)setImageCornerRadius:(CGFloat)cornerRadius {
+    kToastConfig.imageCornerRadius = cornerRadius;
+}
+
 + (void)setBackColor:(UIColor *)backColor {
     kToastConfig.backColor = backColor;
 }
@@ -121,7 +125,7 @@ static id _instance;
     self.toastView.alpha = 0;
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     if (kToastConfig.showMask) {
-        self.maskView = [WHToastView maskViewWithColor:kToastConfig.maskColor coverNav:kToastConfig.maskCoverNav];
+        self.maskView = [self maskViewWithColor:kToastConfig.maskColor coverNav:kToastConfig.maskCoverNav];
         self.maskView.alpha = 0;
         [keyWindow addSubview:self.maskView];
         [keyWindow addSubview:self.toastView];
@@ -146,6 +150,9 @@ static id _instance;
 }
 
 - (void)finishDismiss {
+    [UIView animateWithDuration:1 animations:^{
+        
+    }];
     [self removeToast];
     if (self.finishHandler) { self.finishHandler(); }
 }
@@ -157,6 +164,15 @@ static id _instance;
     [self.maskView removeFromSuperview];
     self.toastView = nil;
     self.maskView = nil;
+}
+
+- (UIView *)maskViewWithColor:(UIColor *)color coverNav:(BOOL)coverNav {
+    UIView *maskView = [[UIView alloc] init];
+    CGFloat topHeight = Toast_isIphoneX() ? 88 : 64;
+    CGFloat y = coverNav ? 0 : topHeight;
+    maskView.frame = CGRectMake(0, y, kWHToastScreenWidth, kWHToastScreenHeight - y);
+    maskView.backgroundColor = color;
+    return maskView;
 }
 
 @end

@@ -19,20 +19,4 @@ typedef NS_ENUM(NSUInteger, WHToastType) {
 
 + (instancetype)toastWithMessage:(NSString *)message type:(WHToastType)type originY:(CGFloat)originY tipImage:(UIImage *)image;
 
-+ (UIView *)maskViewWithColor:(UIColor *)color coverNav:(BOOL)coverNav;
-
 @end
-
-static inline BOOL Toast_isIphoneX() {
-    BOOL result = NO;
-    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
-        return result;
-    }
-    if (@available(iOS 11.0, *)) {
-        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
-        if (mainWindow.safeAreaInsets.bottom > 0.0) {
-            result = YES;
-        }
-    }
-    return result;
-}

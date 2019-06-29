@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68E4C0A622C74F9300FDBEA4 /* UIImage+WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */; };
 		68FDD0F1219EC0620058D292 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F0219EC0620058D292 /* AppDelegate.m */; };
 		68FDD0F4219EC0620058D292 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F3219EC0620058D292 /* ViewController.m */; };
 		68FDD0F7219EC0620058D292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0F5219EC0620058D292 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WHToast.m"; sourceTree = "<group>"; };
+		68E4C0A522C74F9300FDBEA4 /* UIImage+WHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WHToast.h"; sourceTree = "<group>"; };
 		68FDD0EC219EC0620058D292 /* WHToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDD0EF219EC0620058D292 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68FDD0F0219EC0620058D292 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 		68FDD105219EC0770058D292 /* WHToast */ = {
 			isa = PBXGroup;
 			children = (
+				68E4C0A522C74F9300FDBEA4 /* UIImage+WHToast.h */,
+				68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */,
 				68FDD10F219EC0770058D292 /* WHToast.h */,
 				68FDD112219EC0770058D292 /* WHToast.m */,
 				68FDD10E219EC0770058D292 /* WHToastConfig.h */,
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E4C0A622C74F9300FDBEA4 /* UIImage+WHToast.m in Sources */,
 				68FDD0F4219EC0620058D292 /* ViewController.m in Sources */,
 				68FDD11A219EC0770058D292 /* WHToastView.m in Sources */,
 				68FDD0FF219EC0640058D292 /* main.m in Sources */,
