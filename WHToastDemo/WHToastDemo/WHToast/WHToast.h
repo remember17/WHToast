@@ -67,7 +67,7 @@
 /** 是否有背景遮罩，默认有 */
 + (void)setShowMask:(BOOL)showMask;
 
-/** 遮罩颜色，默认透明 */
+/** 遮罩颜色，默认 [UIColor colorWithWhite:0 alpha:0.3] */
 + (void)setMaskColor:(UIColor * _Nonnull)maskColor;
 
 /** 遮罩是否遮住导航栏，默认遮住 */

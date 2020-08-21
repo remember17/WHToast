@@ -34,8 +34,9 @@ static id _instance;
 }
 
 - (void)resetConfig {
-    _showMask = NO;
-    _maskColor = [UIColor clearColor];
+    _showMask = YES;
+    _maskCoverNav = YES;
+    _maskColor = [UIColor colorWithWhite:0 alpha:0.3];
     _iconColor = [UIColor whiteColor];
     _textColor = [UIColor whiteColor];
     _backColor = [UIColor colorWithWhite:0 alpha:0.8];

@@ -41,7 +41,6 @@ static inline BOOL Toast_isIphoneX() {
 
 @property (nonatomic, assign) BOOL showMask;
 @property (nonatomic, assign) BOOL maskCoverNav;
-@property (nonatomic, assign) BOOL alwaysResetConfig;
 
 @property (nonatomic, strong) UIColor *maskColor;
 @property (nonatomic, strong) UIColor *backColor;
