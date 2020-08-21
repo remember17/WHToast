@@ -10,7 +10,7 @@
 
 @implementation UIImage (WHToast)
 
-- (UIImage *)whToast_imageWithCornerRadius:(CGFloat)radius size:(CGSize)size {
+- (UIImage *)whToast_cornerRadius:(CGFloat)radius size:(CGSize)size {
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
     CGContextRef ctx = UIGraphicsGetCurrentContext();

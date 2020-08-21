@@ -10,8 +10,7 @@
 
 @interface UIImage (WHToast)
 
-/** 圆角图片 */
-- (UIImage *)whToast_imageWithCornerRadius:(CGFloat)radius size:(CGSize)size;
+- (UIImage *)whToast_cornerRadius:(CGFloat)radius size:(CGSize)size;
 
 @end
 
