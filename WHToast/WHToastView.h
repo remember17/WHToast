@@ -17,6 +17,9 @@ typedef NS_ENUM(NSUInteger, WHToastType) {
 
 @interface WHToastView : UIView
 
-+ (instancetype)toastWithMessage:(NSString *)message type:(WHToastType)type originY:(CGFloat)originY tipImage:(UIImage *)image;
++ (instancetype _Nullable)toastWithMessage:(NSString * _Nullable)message
+                            type:(WHToastType)type
+                         originY:(CGFloat)originY
+                        tipImage:(UIImage * _Nullable)image;
 
 @end
