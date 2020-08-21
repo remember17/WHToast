@@ -4,7 +4,7 @@
 //
 //  Created by wuhao on 2018/11/15.
 //  Copyright © 2018 wuhao. All rights reserved.
-//  https://github.com/remember17/WHToast
+//
 
 #import "WHToast.h"
 #import "WHToastView.h"
