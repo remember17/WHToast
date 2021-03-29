@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A83D7CCD4567154CC62298B2F176A51 /* WHToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 029473FD655826BF6A6143A75865F3E5 /* WHToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1550CEA436D338FDD3B9B9069BFFE983 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		1845A38BF471C3C285EFD27B6EECF5F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		45C43E709070DCD434BBE4D8AFA80371 /* WHToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F899A8A973A4AAFB8015A4D5563D1914 /* WHToast-dummy.m */; };
+		61AA4757FB2B582179CBF6338C84DB38 /* whtoast_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15310076A9AFF3C72BEE2067AFDD6F1 /* whtoast_success@2x.png */; };
+		6D330D6134BB8FC4C167C6455994CF93 /* Pods-WHToastDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B02A49A8A62241C315F817EA30F64E9 /* Pods-WHToastDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C0C5E2DD10819BE8003BE57E7A16A26 /* UIImage+WHToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D8CC89A449619F72666B9D76DAF486 /* UIImage+WHToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D9D53A0B6B4148768D35FCB88DEE0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		96AFE93288A9CBC17C84824CB562FF1D /* WHToastConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7EE0BF6A097FA4A021A0C77B86138C /* WHToastConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		996EB776719ADDCEDC796605F89BDC5D /* whtoast_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A518FC6BBA3D775431EEFC8791D582 /* whtoast_error.png */; };
+		99F49653659455577AE96AA338109C81 /* whtoast_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7836910B7A357D5BBBD13282649750B9 /* whtoast_error@3x.png */; };
+		9D4577BA5C444055E4DC7C10AAC1379B /* Pods-WHToastDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3D74C5260181B7FE1D5FC8AB2CD2E6 /* Pods-WHToastDemo-dummy.m */; };
+		9FA1749067F330740AC2A45A5BFB19A9 /* WHToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B44D3545893DD4579B11D93DE88F3C8 /* WHToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF513CBA1DEA885461F5F83E370F38AA /* whtoast_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9062573BA8F3D2797BBBB6729DC66A /* whtoast_error@2x.png */; };
+		B2CD9CBB323B85C6912C7EF5FC4C20B4 /* UIImage+WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2F77A2C27F4B000E5779C8D2CC739 /* UIImage+WHToast.m */; };
+		BA450FA42C835C4F9AEB50A2173C0FA3 /* WHToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A91098C4BFBE070E5C74351921BB0680 /* WHToastConfig.m */; };
+		D2FB57484374E74CC1DF8062A6FF3985 /* WHToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3313C06A46C3B022ED5F34E2DF8E08 /* WHToastView.m */; };
+		E9D10E79B080390D4EF05639FB6870AB /* WHToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 44219249F6C6D59C6FD8B9520475753C /* WHToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2761725EEF7A49164DCA78AA53080C /* whtoast_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7399DADBA42B8651455036753DF3A82C /* whtoast_success@3x.png */; };
+		EC020CA112ACA948487DC346561B728F /* whtoast_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD217DD706BB2C09A1F3CD170390445 /* whtoast_success.png */; };
+		F850B56F6E0B7E6053FD4BE2E17E3E02 /* WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD84CC7B39AD74B7C36C86B92ED437 /* WHToast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8676C8EDA9142F8A7AA69CD67CD1C3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD0DEEDE9CB35945D67203F112697C6;
+			remoteInfo = WHToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029473FD655826BF6A6143A75865F3E5 /* WHToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHToastView.h; path = WHToast/WHToastView.h; sourceTree = "<group>"; };
+		082728778D9412831436CDD9836CC4BB /* Pods-WHToastDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHToastDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0FB91A9F73FDD5BDCB2ECBBF7A1E9913 /* Pods-WHToastDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WHToastDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1177A3F0F960D35E269A759ED2CEBBE0 /* WHToast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHToast-Info.plist"; sourceTree = "<group>"; };
+		1F6E4D0CBCB4C866F8AC66A57A95B115 /* Pods-WHToastDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHToastDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2E3313C06A46C3B022ED5F34E2DF8E08 /* WHToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WHToastView.m; path = WHToast/WHToastView.m; sourceTree = "<group>"; };
+		2FD217DD706BB2C09A1F3CD170390445 /* whtoast_success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = whtoast_success.png; path = WHToast/wtoast_icon/whtoast_success.png; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		385C008B20A41E6A50894271FE1D5F02 /* Pods-WHToastDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WHToastDemo.modulemap"; sourceTree = "<group>"; };
+		39D8CC89A449619F72666B9D76DAF486 /* UIImage+WHToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+WHToast.h"; path = "WHToast/UIImage+WHToast.h"; sourceTree = "<group>"; };
+		40A518FC6BBA3D775431EEFC8791D582 /* whtoast_error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = whtoast_error.png; path = WHToast/wtoast_icon/whtoast_error.png; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		44219249F6C6D59C6FD8B9520475753C /* WHToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHToast.h; path = WHToast/WHToast.h; sourceTree = "<group>"; };
+		4D7EE0BF6A097FA4A021A0C77B86138C /* WHToastConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHToastConfig.h; path = WHToast/WHToastConfig.h; sourceTree = "<group>"; };
+		5B02A49A8A62241C315F817EA30F64E9 /* Pods-WHToastDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHToastDemo-umbrella.h"; sourceTree = "<group>"; };
+		5EEE74C99E294728F8AAC7C491F13400 /* WHToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHToast.xcconfig; sourceTree = "<group>"; };
+		6359D85327584EC37D9D09CE4B035716 /* WHToast.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WHToast.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		67DD84CC7B39AD74B7C36C86B92ED437 /* WHToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WHToast.m; path = WHToast/WHToast.m; sourceTree = "<group>"; };
+		6CAAA690CA9973B55D2380CCABDA7B33 /* WHToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WHToast.modulemap; sourceTree = "<group>"; };
+		7190556F2CB4CA48349149283A1172C0 /* WHToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHToast-prefix.pch"; sourceTree = "<group>"; };
+		7399DADBA42B8651455036753DF3A82C /* whtoast_success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whtoast_success@3x.png"; path = "WHToast/wtoast_icon/whtoast_success@3x.png"; sourceTree = "<group>"; };
+		7836910B7A357D5BBBD13282649750B9 /* whtoast_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whtoast_error@3x.png"; path = "WHToast/wtoast_icon/whtoast_error@3x.png"; sourceTree = "<group>"; };
+		7B44D3545893DD4579B11D93DE88F3C8 /* WHToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHToast-umbrella.h"; sourceTree = "<group>"; };
+		8BA2F77A2C27F4B000E5779C8D2CC739 /* UIImage+WHToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WHToast.m"; path = "WHToast/UIImage+WHToast.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FDAAF013B3A21D97E1128456B752786 /* Pods-WHToastDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHToastDemo-frameworks.sh"; sourceTree = "<group>"; };
+		A7A1960EDFDE21020DA3CB1E976D2625 /* WHToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WHToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91098C4BFBE070E5C74351921BB0680 /* WHToastConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WHToastConfig.m; path = WHToast/WHToastConfig.m; sourceTree = "<group>"; };
+		AE3D74C5260181B7FE1D5FC8AB2CD2E6 /* Pods-WHToastDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHToastDemo-dummy.m"; sourceTree = "<group>"; };
+		AFEAB55A1ECCB779653842A534EA3EEA /* Pods_WHToastDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHToastDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9062573BA8F3D2797BBBB6729DC66A /* whtoast_error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whtoast_error@2x.png"; path = "WHToast/wtoast_icon/whtoast_error@2x.png"; sourceTree = "<group>"; };
+		BDA0B6BC7801D6A8D99B092EE0C50ACE /* Pods-WHToastDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHToastDemo-Info.plist"; sourceTree = "<group>"; };
+		BE62EB8E0B3F90D1722FED70A08B39D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D15310076A9AFF3C72BEE2067AFDD6F1 /* whtoast_success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whtoast_success@2x.png"; path = "WHToast/wtoast_icon/whtoast_success@2x.png"; sourceTree = "<group>"; };
+		E1679200AD9858C859CFCC24B6F6CA63 /* Pods-WHToastDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHToastDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F899A8A973A4AAFB8015A4D5563D1914 /* WHToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHToast-dummy.m"; sourceTree = "<group>"; };
+		FBB568E8D993489A7217F818377CD2EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DC5A6C125603A0E76DAF3DB4544233E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D9D53A0B6B4148768D35FCB88DEE0B /* Foundation.framework in Frameworks */,
+				1550CEA436D338FDD3B9B9069BFFE983 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60DDA19830E1D5E647BDB340A1F39E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1845A38BF471C3C285EFD27B6EECF5F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053969B546C315359BB0D318C304A4A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40A518FC6BBA3D775431EEFC8791D582 /* whtoast_error.png */,
+				BC9062573BA8F3D2797BBBB6729DC66A /* whtoast_error@2x.png */,
+				7836910B7A357D5BBBD13282649750B9 /* whtoast_error@3x.png */,
+				2FD217DD706BB2C09A1F3CD170390445 /* whtoast_success.png */,
+				D15310076A9AFF3C72BEE2067AFDD6F1 /* whtoast_success@2x.png */,
+				7399DADBA42B8651455036753DF3A82C /* whtoast_success@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		15C4C78E7C0922646D856263123EE9A0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6D80AD77E1A609D505C4F2CBE315E19 /* WHToast */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1706072F0920EDD61E6A97183B665181 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FBB568E8D993489A7217F818377CD2EC /* LICENSE */,
+				BE62EB8E0B3F90D1722FED70A08B39D9 /* README.md */,
+				6359D85327584EC37D9D09CE4B035716 /* WHToast.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1F8FA51AA64C3ACB23F26A418A82CDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFEAB55A1ECCB779653842A534EA3EEA /* Pods_WHToastDemo.framework */,
+				A7A1960EDFDE21020DA3CB1E976D2625 /* WHToast.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2335EC3CFD733F8815DE971462DF8F26 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26D55A1A98FE55084B19C57EB61424B1 /* Pods-WHToastDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		26D55A1A98FE55084B19C57EB61424B1 /* Pods-WHToastDemo */ = {
+			isa = PBXGroup;
+			children = (
+				385C008B20A41E6A50894271FE1D5F02 /* Pods-WHToastDemo.modulemap */,
+				0FB91A9F73FDD5BDCB2ECBBF7A1E9913 /* Pods-WHToastDemo-acknowledgements.markdown */,
+				E1679200AD9858C859CFCC24B6F6CA63 /* Pods-WHToastDemo-acknowledgements.plist */,
+				AE3D74C5260181B7FE1D5FC8AB2CD2E6 /* Pods-WHToastDemo-dummy.m */,
+				9FDAAF013B3A21D97E1128456B752786 /* Pods-WHToastDemo-frameworks.sh */,
+				BDA0B6BC7801D6A8D99B092EE0C50ACE /* Pods-WHToastDemo-Info.plist */,
+				5B02A49A8A62241C315F817EA30F64E9 /* Pods-WHToastDemo-umbrella.h */,
+				1F6E4D0CBCB4C866F8AC66A57A95B115 /* Pods-WHToastDemo.debug.xcconfig */,
+				082728778D9412831436CDD9836CC4BB /* Pods-WHToastDemo.release.xcconfig */,
+			);
+			name = "Pods-WHToastDemo";
+			path = "Target Support Files/Pods-WHToastDemo";
+			sourceTree = "<group>";
+		};
+		3870FFC60BC6213A9C3C82F42A1A356D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CAAA690CA9973B55D2380CCABDA7B33 /* WHToast.modulemap */,
+				5EEE74C99E294728F8AAC7C491F13400 /* WHToast.xcconfig */,
+				F899A8A973A4AAFB8015A4D5563D1914 /* WHToast-dummy.m */,
+				1177A3F0F960D35E269A759ED2CEBBE0 /* WHToast-Info.plist */,
+				7190556F2CB4CA48349149283A1172C0 /* WHToast-prefix.pch */,
+				7B44D3545893DD4579B11D93DE88F3C8 /* WHToast-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "WHToastDemo/Pods/Target Support Files/WHToast";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				15C4C78E7C0922646D856263123EE9A0 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				1F8FA51AA64C3ACB23F26A418A82CDF2 /* Products */,
+				2335EC3CFD733F8815DE971462DF8F26 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6D80AD77E1A609D505C4F2CBE315E19 /* WHToast */ = {
+			isa = PBXGroup;
+			children = (
+				39D8CC89A449619F72666B9D76DAF486 /* UIImage+WHToast.h */,
+				8BA2F77A2C27F4B000E5779C8D2CC739 /* UIImage+WHToast.m */,
+				44219249F6C6D59C6FD8B9520475753C /* WHToast.h */,
+				67DD84CC7B39AD74B7C36C86B92ED437 /* WHToast.m */,
+				4D7EE0BF6A097FA4A021A0C77B86138C /* WHToastConfig.h */,
+				A91098C4BFBE070E5C74351921BB0680 /* WHToastConfig.m */,
+				029473FD655826BF6A6143A75865F3E5 /* WHToastView.h */,
+				2E3313C06A46C3B022ED5F34E2DF8E08 /* WHToastView.m */,
+				1706072F0920EDD61E6A97183B665181 /* Pod */,
+				053969B546C315359BB0D318C304A4A9 /* Resources */,
+				3870FFC60BC6213A9C3C82F42A1A356D /* Support Files */,
+			);
+			name = WHToast;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01B2344C2EE51794AE2B1254D3F2A45F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D330D6134BB8FC4C167C6455994CF93 /* Pods-WHToastDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61816ECB1570F778B2A632E621727F73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0C5E2DD10819BE8003BE57E7A16A26 /* UIImage+WHToast.h in Headers */,
+				9FA1749067F330740AC2A45A5BFB19A9 /* WHToast-umbrella.h in Headers */,
+				E9D10E79B080390D4EF05639FB6870AB /* WHToast.h in Headers */,
+				96AFE93288A9CBC17C84824CB562FF1D /* WHToastConfig.h in Headers */,
+				0A83D7CCD4567154CC62298B2F176A51 /* WHToastView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F03C11FA6CE750EEDE93E6D9C6C3CA9 /* Pods-WHToastDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442255543F079BDAA37040185A7EEAC0 /* Build configuration list for PBXNativeTarget "Pods-WHToastDemo" */;
+			buildPhases = (
+				01B2344C2EE51794AE2B1254D3F2A45F /* Headers */,
+				E6AB207FB3601B3AC4308DB72AE90F84 /* Sources */,
+				60DDA19830E1D5E647BDB340A1F39E5A /* Frameworks */,
+				229534D3E2587C84199047E96835D94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D5AE4A54983B1119D568185960401 /* PBXTargetDependency */,
+			);
+			name = "Pods-WHToastDemo";
+			productName = "Pods-WHToastDemo";
+			productReference = AFEAB55A1ECCB779653842A534EA3EEA /* Pods_WHToastDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCD0DEEDE9CB35945D67203F112697C6 /* WHToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71689237114B6D554F0D581AB69D3DA /* Build configuration list for PBXNativeTarget "WHToast" */;
+			buildPhases = (
+				61816ECB1570F778B2A632E621727F73 /* Headers */,
+				94C86C5102D1A8DBD8709ACEE0C37320 /* Sources */,
+				5DC5A6C125603A0E76DAF3DB4544233E /* Frameworks */,
+				13CBFDCDB8F2E620B9ECFE3F3D28B865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHToast;
+			productName = WHToast;
+			productReference = A7A1960EDFDE21020DA3CB1E976D2625 /* WHToast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1F8FA51AA64C3ACB23F26A418A82CDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F03C11FA6CE750EEDE93E6D9C6C3CA9 /* Pods-WHToastDemo */,
+				DCD0DEEDE9CB35945D67203F112697C6 /* WHToast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13CBFDCDB8F2E620B9ECFE3F3D28B865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996EB776719ADDCEDC796605F89BDC5D /* whtoast_error.png in Resources */,
+				AF513CBA1DEA885461F5F83E370F38AA /* whtoast_error@2x.png in Resources */,
+				99F49653659455577AE96AA338109C81 /* whtoast_error@3x.png in Resources */,
+				EC020CA112ACA948487DC346561B728F /* whtoast_success.png in Resources */,
+				61AA4757FB2B582179CBF6338C84DB38 /* whtoast_success@2x.png in Resources */,
+				EB2761725EEF7A49164DCA78AA53080C /* whtoast_success@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229534D3E2587C84199047E96835D94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94C86C5102D1A8DBD8709ACEE0C37320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CD9CBB323B85C6912C7EF5FC4C20B4 /* UIImage+WHToast.m in Sources */,
+				45C43E709070DCD434BBE4D8AFA80371 /* WHToast-dummy.m in Sources */,
+				F850B56F6E0B7E6053FD4BE2E17E3E02 /* WHToast.m in Sources */,
+				BA450FA42C835C4F9AEB50A2173C0FA3 /* WHToastConfig.m in Sources */,
+				D2FB57484374E74CC1DF8062A6FF3985 /* WHToastView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AB207FB3601B3AC4308DB72AE90F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4577BA5C444055E4DC7C10AAC1379B /* Pods-WHToastDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0D5AE4A54983B1119D568185960401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WHToast;
+			target = DCD0DEEDE9CB35945D67203F112697C6 /* WHToast */;
+			targetProxy = F8676C8EDA9142F8A7AA69CD67CD1C3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050754E94AD7868EBD06743CD85526B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEE74C99E294728F8AAC7C491F13400 /* WHToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WHToast/WHToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WHToast/WHToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WHToast/WHToast.modulemap";
+				PRODUCT_MODULE_NAME = WHToast;
+				PRODUCT_NAME = WHToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4449386F35E8B1EEEA6DCC8C839EF8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEE74C99E294728F8AAC7C491F13400 /* WHToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WHToast/WHToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WHToast/WHToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WHToast/WHToast.modulemap";
+				PRODUCT_MODULE_NAME = WHToast;
+				PRODUCT_NAME = WHToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		616AB6AAABB370DA02B0F6EC661DBEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6E4D0CBCB4C866F8AC66A57A95B115 /* Pods-WHToastDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BDB380FB55B268999E295BFCD357A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082728778D9412831436CDD9836CC4BB /* Pods-WHToastDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442255543F079BDAA37040185A7EEAC0 /* Build configuration list for PBXNativeTarget "Pods-WHToastDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616AB6AAABB370DA02B0F6EC661DBEA9 /* Debug */,
+				BDB380FB55B268999E295BFCD357A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
+				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71689237114B6D554F0D581AB69D3DA /* Build configuration list for PBXNativeTarget "WHToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4449386F35E8B1EEEA6DCC8C839EF8C6 /* Debug */,
+				050754E94AD7868EBD06743CD85526B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

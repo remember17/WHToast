@@ -1,0 +1,6 @@
+framework module WHToast {
+  umbrella header "WHToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

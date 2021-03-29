@@ -3,31 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68E4C0A622C74F9300FDBEA4 /* UIImage+WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */; };
 		68FDD0F1219EC0620058D292 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F0219EC0620058D292 /* AppDelegate.m */; };
 		68FDD0F4219EC0620058D292 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0F3219EC0620058D292 /* ViewController.m */; };
 		68FDD0F7219EC0620058D292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0F5219EC0620058D292 /* Main.storyboard */; };
 		68FDD0F9219EC0640058D292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0F8219EC0640058D292 /* Assets.xcassets */; };
 		68FDD0FC219EC0640058D292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD0FA219EC0640058D292 /* LaunchScreen.storyboard */; };
 		68FDD0FF219EC0640058D292 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD0FE219EC0640058D292 /* main.m */; };
-		68FDD113219EC0770058D292 /* whtoast_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD107219EC0770058D292 /* whtoast_success.png */; };
-		68FDD114219EC0770058D292 /* whtoast_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD108219EC0770058D292 /* whtoast_success@2x.png */; };
-		68FDD115219EC0770058D292 /* whtoast_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD109219EC0770058D292 /* whtoast_success@3x.png */; };
-		68FDD116219EC0770058D292 /* whtoast_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10A219EC0770058D292 /* whtoast_error.png */; };
-		68FDD117219EC0770058D292 /* whtoast_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10B219EC0770058D292 /* whtoast_error@2x.png */; };
-		68FDD118219EC0770058D292 /* whtoast_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDD10C219EC0770058D292 /* whtoast_error@3x.png */; };
-		68FDD119219EC0770058D292 /* WHToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD110219EC0770058D292 /* WHToastConfig.m */; };
-		68FDD11A219EC0770058D292 /* WHToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD111219EC0770058D292 /* WHToastView.m */; };
-		68FDD11B219EC0770058D292 /* WHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDD112219EC0770058D292 /* WHToast.m */; };
+		95269A6CC8D32D4BFA4A23F8 /* Pods_WHToastDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D070F7BA6B929A5D2DEA4A93 /* Pods_WHToastDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WHToast.m"; sourceTree = "<group>"; };
-		68E4C0A522C74F9300FDBEA4 /* UIImage+WHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WHToast.h"; sourceTree = "<group>"; };
+		3F193FA10F74ADC46DD96094 /* Pods-WHToastDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHToastDemo.debug.xcconfig"; path = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		68FDD0EC219EC0620058D292 /* WHToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDD0EF219EC0620058D292 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68FDD0F0219EC0620058D292 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,18 +28,8 @@
 		68FDD0FB219EC0640058D292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68FDD0FD219EC0640058D292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FDD0FE219EC0640058D292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		68FDD107219EC0770058D292 /* whtoast_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_success.png; sourceTree = "<group>"; };
-		68FDD108219EC0770058D292 /* whtoast_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@2x.png"; sourceTree = "<group>"; };
-		68FDD109219EC0770058D292 /* whtoast_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_success@3x.png"; sourceTree = "<group>"; };
-		68FDD10A219EC0770058D292 /* whtoast_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whtoast_error.png; sourceTree = "<group>"; };
-		68FDD10B219EC0770058D292 /* whtoast_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@2x.png"; sourceTree = "<group>"; };
-		68FDD10C219EC0770058D292 /* whtoast_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whtoast_error@3x.png"; sourceTree = "<group>"; };
-		68FDD10D219EC0770058D292 /* WHToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastView.h; sourceTree = "<group>"; };
-		68FDD10E219EC0770058D292 /* WHToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToastConfig.h; sourceTree = "<group>"; };
-		68FDD10F219EC0770058D292 /* WHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHToast.h; sourceTree = "<group>"; };
-		68FDD110219EC0770058D292 /* WHToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastConfig.m; sourceTree = "<group>"; };
-		68FDD111219EC0770058D292 /* WHToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToastView.m; sourceTree = "<group>"; };
-		68FDD112219EC0770058D292 /* WHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHToast.m; sourceTree = "<group>"; };
+		D070F7BA6B929A5D2DEA4A93 /* Pods_WHToastDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHToastDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1C788D8C6B47DE4142BAC7 /* Pods-WHToastDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHToastDemo.release.xcconfig"; path = "Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95269A6CC8D32D4BFA4A23F8 /* Pods_WHToastDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1529E0C9536A55704E44C7BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F193FA10F74ADC46DD96094 /* Pods-WHToastDemo.debug.xcconfig */,
+				DE1C788D8C6B47DE4142BAC7 /* Pods-WHToastDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		68FDD0E3219EC0620058D292 = {
 			isa = PBXGroup;
 			children = (
 				68FDD0EE219EC0620058D292 /* WHToastDemo */,
 				68FDD0ED219EC0620058D292 /* Products */,
+				1529E0C9536A55704E44C7BE /* Pods */,
+				B1AEC9C24ABA4A5B151E6BDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,7 +74,6 @@
 		68FDD0EE219EC0620058D292 /* WHToastDemo */ = {
 			isa = PBXGroup;
 			children = (
-				68FDD105219EC0770058D292 /* WHToast */,
 				68FDD0EF219EC0620058D292 /* AppDelegate.h */,
 				68FDD0F0219EC0620058D292 /* AppDelegate.m */,
 				68FDD0F2219EC0620058D292 /* ViewController.h */,
@@ -96,33 +87,12 @@
 			path = WHToastDemo;
 			sourceTree = "<group>";
 		};
-		68FDD105219EC0770058D292 /* WHToast */ = {
+		B1AEC9C24ABA4A5B151E6BDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68E4C0A522C74F9300FDBEA4 /* UIImage+WHToast.h */,
-				68E4C0A422C74F9300FDBEA4 /* UIImage+WHToast.m */,
-				68FDD10F219EC0770058D292 /* WHToast.h */,
-				68FDD112219EC0770058D292 /* WHToast.m */,
-				68FDD10E219EC0770058D292 /* WHToastConfig.h */,
-				68FDD110219EC0770058D292 /* WHToastConfig.m */,
-				68FDD10D219EC0770058D292 /* WHToastView.h */,
-				68FDD111219EC0770058D292 /* WHToastView.m */,
-				68FDD106219EC0770058D292 /* wtoast_icon */,
+				D070F7BA6B929A5D2DEA4A93 /* Pods_WHToastDemo.framework */,
 			);
-			path = WHToast;
-			sourceTree = "<group>";
-		};
-		68FDD106219EC0770058D292 /* wtoast_icon */ = {
-			isa = PBXGroup;
-			children = (
-				68FDD107219EC0770058D292 /* whtoast_success.png */,
-				68FDD108219EC0770058D292 /* whtoast_success@2x.png */,
-				68FDD109219EC0770058D292 /* whtoast_success@3x.png */,
-				68FDD10A219EC0770058D292 /* whtoast_error.png */,
-				68FDD10B219EC0770058D292 /* whtoast_error@2x.png */,
-				68FDD10C219EC0770058D292 /* whtoast_error@3x.png */,
-			);
-			path = wtoast_icon;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68FDD102219EC0640058D292 /* Build configuration list for PBXNativeTarget "WHToastDemo" */;
 			buildPhases = (
+				6895D940576E6479A3F765E0 /* [CP] Check Pods Manifest.lock */,
 				68FDD0E8219EC0620058D292 /* Sources */,
 				68FDD0E9219EC0620058D292 /* Frameworks */,
 				68FDD0EA219EC0620058D292 /* Resources */,
+				AE7314EAF1A7458C96808778 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,7 +123,7 @@
 		68FDD0E4219EC0620058D292 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = wuhao;
 				TargetAttributes = {
 					68FDD0EB219EC0620058D292 = {
@@ -182,13 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68FDD113219EC0770058D292 /* whtoast_success.png in Resources */,
-				68FDD118219EC0770058D292 /* whtoast_error@3x.png in Resources */,
 				68FDD0FC219EC0640058D292 /* LaunchScreen.storyboard in Resources */,
-				68FDD115219EC0770058D292 /* whtoast_success@3x.png in Resources */,
-				68FDD116219EC0770058D292 /* whtoast_error.png in Resources */,
-				68FDD117219EC0770058D292 /* whtoast_error@2x.png in Resources */,
-				68FDD114219EC0770058D292 /* whtoast_success@2x.png in Resources */,
 				68FDD0F9219EC0640058D292 /* Assets.xcassets in Resources */,
 				68FDD0F7219EC0620058D292 /* Main.storyboard in Resources */,
 			);
@@ -196,17 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6895D940576E6479A3F765E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WHToastDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7314EAF1A7458C96808778 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WHToastDemo/Pods-WHToastDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68FDD0E8219EC0620058D292 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E4C0A622C74F9300FDBEA4 /* UIImage+WHToast.m in Sources */,
 				68FDD0F4219EC0620058D292 /* ViewController.m in Sources */,
-				68FDD11A219EC0770058D292 /* WHToastView.m in Sources */,
 				68FDD0FF219EC0640058D292 /* main.m in Sources */,
-				68FDD119219EC0770058D292 /* WHToastConfig.m in Sources */,
-				68FDD11B219EC0770058D292 /* WHToast.m in Sources */,
 				68FDD0F1219EC0620058D292 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +263,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -318,6 +323,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -347,6 +353,7 @@
 		};
 		68FDD103219EC0640058D292 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F193FA10F74ADC46DD96094 /* Pods-WHToastDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +370,7 @@
 		};
 		68FDD104219EC0640058D292 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1C788D8C6B47DE4142BAC7 /* Pods-WHToastDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

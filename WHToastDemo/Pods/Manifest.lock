@@ -1,0 +1,16 @@
+PODS:
+  - WHToast (0.0.7)
+
+DEPENDENCIES:
+  - WHToast (from `../`)
+
+EXTERNAL SOURCES:
+  WHToast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
+
+PODFILE CHECKSUM: 1526dcacd4cc598141882725cec8e019cee5bb2c
+
+COCOAPODS: 1.7.0
