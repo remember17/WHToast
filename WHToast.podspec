@@ -4,7 +4,7 @@
 
     s.name        = "WHToast"
 
-    s.version      = "0.0.7"
+    s.version      = "0.0.8"
 
     s.summary      = "iOS Toast"
 

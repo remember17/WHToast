@@ -1,17 +1,15 @@
 # WHToast
 
-WHToast是一个轻量级的提示控件，没有任何依赖。先来看一下效果图。
+WHToast是一个轻量级的提示控件，没有任何依赖。
 
 ![whtoast.gif](https://upload-images.jianshu.io/upload_images/3873004-1f63d7bbdb9a331c.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/265)
 
-使用方法也非常简单，下面是使用步骤：
+使用方法：
 
-### 1. 可以直接在本页面下载文件拖入WHToast文件到工程，也可以使用pod。
-
-> 如果pod找不到WHToast，先执行 `pod setup`
+### 1. 可以使用pod，也可以直接下载把WHToast拖入到工程
 
 ```objc
-pod 'WHToast','~>0.0.7'
+pod 'WHToast','~>0.0.8'
 ```
 
 ### 2. 导入WHToast.h头文件
