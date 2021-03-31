@@ -189,7 +189,7 @@ static id _instance;
     self.finishHandler = handler;
     self.toastView = [WHToastView toastWithMessage:message type:type originY:originY tipImage:image];
     self.toastView.alpha = 0;
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    UIWindow *keyWindow = whToast_currentWindow();
     if (kToastConfig.showMask) {
         self.maskView = [self maskViewWithColor:kToastConfig.maskColor coverNav:kToastConfig.maskCoverNav];
         self.maskView.alpha = 0;

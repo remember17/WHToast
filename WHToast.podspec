@@ -14,7 +14,7 @@
 
     s.author      = { "wuhao" => "503007958@qq.com" }
 
-    s.platform    = :ios, "8.0"
+    s.platform    = :ios, "11.0"
 
     s.source      = { :git => "https://github.com/remember17/WHToast.git", :tag => s.version }
 

@@ -2,12 +2,11 @@
 //  ViewController.m
 //  WHToastDemo
 //
-//  Created by wuhao on 2018/11/16.
-//  Copyright © 2018 wuhao. All rights reserved.
-//  https://github.com/remember17/WHToast
+//  Created by 吴浩 on 2021/3/31.
+//
 
 #import "ViewController.h"
-#import "WHToast/WHToast.h"
+#import <WHToast.h>
 
 @implementation ViewController
 

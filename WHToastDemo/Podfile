@@ -4,8 +4,7 @@
 target 'WHToastDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'WHToast', :path=> '../'
   # Pods for WHToastDemo
-  pod 'WHToast', :path => '../'
 
 end
