@@ -1,5 +1,5 @@
 PODS:
-  - WHToast (0.0.7)
+  - WHToast (0.0.8)
 
 DEPENDENCIES:
   - WHToast (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WHToast: 2acf92618e45e57592f8bc874700f26bc70d7650
+  WHToast: 5da5bb80bdd1fea9455d4215577d9c5be2c506b8
 
 PODFILE CHECKSUM: c62f868afa4df9e610c927cd6e5c3eedf333b7b9
 

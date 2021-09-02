@@ -1,6 +1,6 @@
 {
   "name": "WHToast",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "summary": "iOS Toast",
   "homepage": "https://github.com/remember17/WHToast",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/remember17/WHToast.git",
-    "tag": "0.0.7"
+    "tag": "0.0.8"
   },
   "source_files": [
     "WHToast",

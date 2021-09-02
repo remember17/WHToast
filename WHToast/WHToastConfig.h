@@ -7,19 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #define kToastConfig ([WHToastConfig sharedInstance])
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_7_0
-#define kWHToastMultilineTextSize(text, font, maxSize) [text length] > 0 ? [text \
-boundingRectWithSize:maxSize options:(NSStringDrawingUsesLineFragmentOrigin) \
-attributes:@{NSFontAttributeName:font} context:nil].size : CGSizeZero;
-#else
-#define kWHToastMultilineTextSize(text, font, maxSize) [text length] > 0 ? [text \
-sizeWithFont:font constrainedToSize:maxSize] : CGSizeZero;
-#endif
 #define kWHToastScreenWidth ([UIScreen mainScreen].bounds.size.width)
 #define kWHToastScreenHeight ([UIScreen mainScreen].bounds.size.height)
 
-static inline UIWindow* whToast_currentWindow() {
+static inline UIWindow *whToast_currentWindow() {
     UIWindow* window = nil;
     if (@available(iOS 13.0, *)) {
         for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
@@ -61,16 +54,22 @@ static inline BOOL Toast_isIphoneX() {
 
 @property (nonatomic, strong) UIColor *maskColor;
 @property (nonatomic, strong) UIColor *backColor;
-@property (nonatomic, strong) UIColor *iconColor;
+
 @property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) UIFont *font;
+@property (nonatomic, assign) CGFloat lineHeight;
+@property (nonatomic, assign) CGFloat lineSpacing;
 
 @property (nonatomic, assign) CGSize tipImageSize;
-
-@property (nonatomic, assign) CGFloat padding;
+@property (nonatomic, assign) CGFloat tipImageBottomMargin;
+@property (nonatomic, assign) CGFloat leftPadding;
+@property (nonatomic, assign) CGFloat topPadding;
 @property (nonatomic, assign) CGFloat cornerRadius;
 @property (nonatomic, assign) CGFloat imageCornerRadius;
-@property (nonatomic, assign) CGFloat fontSize;
+
 @property (nonatomic, assign) CGFloat minWidth;
+@property (nonatomic, assign) CGFloat minTopMargin;
+@property (nonatomic, assign) CGFloat minLeftMargin;
 
 - (void)resetConfig;
 
