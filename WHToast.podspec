@@ -4,7 +4,7 @@
 
     s.name        = "WHToast"
 
-    s.version      = "0.0.9"
+    s.version      = "0.1.0"
 
     s.summary      = "iOS Toast"
 
@@ -21,8 +21,6 @@
     s.source_files  = "WHToast", "WHToast/*.{h,m}"
 
     s.framework  = "UIKit"
-
-    s.resource   = 'WHToast/wtoast_icon/**'
 
     s.requires_arc = true
 
